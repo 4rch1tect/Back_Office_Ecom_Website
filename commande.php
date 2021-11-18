@@ -22,7 +22,7 @@
 </nav>
 
     <div class="container">
-            <form action="createC.php" 
+            <form action="../Yassine/crud_commande/createC.php" 
 		      method="post">
             
 		   <h4 class="display-4 text-center">Ajouter commande</h4><hr><br>
@@ -55,12 +55,12 @@
 		           id="prix" 
 		           name="prix" 
 		           value="<?php if(isset($_GET['prix']))
-		                           echo($_GET['prix']); ?>" 
+		                           echo($_GET['prix']); ?>"
 		           placeholder="Enter prix de commande">
 		   </div>
            <div class="form-group">
 		     <label for="date_commande">date de la commande</label>
-		     <input type="number" 
+		     <input type="date" 
 		           class="form-control" 
 		           id="date_commande" 
 		           name="date_commande" 

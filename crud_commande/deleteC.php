@@ -1,7 +1,8 @@
 <?php  
 
 if(isset($_GET['ref'])){
-   include "db_config.php";
+   include "../db_config.php";
+   include "../Yassine/afficheC.php";
     function validate($data){
         $data = trim($data);
         $data = stripslashes($data);
@@ -15,11 +16,11 @@ if(isset($_GET['ref'])){
 	        WHERE ref=$ref";
    $result = mysqli_query($config, $sql);
    if ($result) {
-   	  header("Location: afficheC.php?success=successfully deleted");
+   	  header("Location: ../afficheC.php?success=successfully deleted");
    }else {
-      header("Location: afficheC.php?error=unknown error occurred&$user_data");
+      header("Location: ../afficheC.php?error=unknown error occurred&$user_data");
    }
 
 }else {
-	header("Location: afficheC.php");
+	header("Location: ../afficheC.php");
 }

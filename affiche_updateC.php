@@ -1,4 +1,4 @@
-<?php include 'updateC.php'; ?>
+<?php include '../Yassine/crud_commande/updateC.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +22,7 @@
 </nav>
 
     <div class="container">
-            <form action="update.php" 
+            <form action="../Yassine/crud_commande/updateC.php" 
 		      method="post">
             
 		   <h4 class="display-4 text-center">update</h4><hr><br>
@@ -44,8 +44,8 @@
 		           class="form-control" 
 		           id="ref" 
 		           name="ref" 
-                   value="<?=$row['ref'] ?>" 
-		           >
+                   value="<?=$row['ref']?>" 
+		           >	
 		 </div>
            <div class="form-group">
 		     <label for="prix">Prix de la commande</label>
@@ -53,18 +53,27 @@
 		           class="form-control" 
 		           id="prix" 
 		           name="prix" 
-		           value="<?=$row['prix'] ?>" 
+		           value="<?=$row['prix']?>" 
+		    >
+		   </div>
+		   <div class="form-group">
+		     <label for="date_commande">Date de la commande</label>
+		     <input type="date" 
+		           class="form-control" 
+		           id="date_commande" 
+		           name="date_commande" 
+		           value="<?=$row['date_commande']?>" 
 		    >
 		   </div>
 
            <input type="number" 
 		          name="ref"
-		          value="<?=$row['ref']?>"
+		          value="<?=$row['ref'] ?>"
 		          hidden >
 
            <button type="submit" 
 		          class="btn btn-primary"
-		          name="update">update</button>
+		          name="updateC">update</button>
 		    <a href="afficheC.php" class="link-primary">liste des commandes</a>
         </form>
     </div>

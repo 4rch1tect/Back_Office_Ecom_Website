@@ -1,4 +1,4 @@
-<?php include 'updateP.php'; ?>
+<?php include '../Yassine/crud_panier/updateP.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +23,7 @@
 </nav>
 
     <div class="container">
-            <form action="updateP.php" 
+            <form action="../Yassine/crud_panier/updateP.php" 
 		      method="post">
             
 		   <h4 class="display-4 text-center">update</h4><hr><br>
@@ -45,7 +45,7 @@
 		           class="form-control" 
 		           id="id_produit" 
 		           name="id_produit" 
-                   value="<?=$row['id_produit'] ?>" 
+                   value="<?=$row['id_produit']?>" 
 		           >
 		 </div>
            <div class="form-group">
@@ -54,7 +54,7 @@
 		           class="form-control" 
 		           id="qte_produit" 
 		           name="qte_produit" 
-		           value="<?=$row['qte_produit'] ?>" 
+		           value="<?=$row['qte_produit']?>"
 		    >
 		   </div>
            <div class="form-group">
@@ -63,7 +63,7 @@
 		           class="form-control" 
 		           id="prix_produit" 
 		           name="prix_produit" 
-                   value="<?=$row['prix_produit'] ?>" >
+                   value="<?=$row['prix_produit']?>" >
                    </div> 
 
            <input type="number" 

@@ -24,7 +24,7 @@
 </nav>
 
     <div class="container">
-            <form action="createP.php" 
+            <form action="../Yassine/crud_panier/createP.php" 
 		      method="post">
             
 		   <h4 class="display-4 text-center">Ajouter panier</h4><hr><br>
